@@ -3,10 +3,8 @@ using System;
 public class DatabaseConnection
 {
     private static DatabaseConnection _instance;
-    // Об'єкт для блокування (щоб два потоки не створили два об'єкти одночасно)
     private static readonly object _lock = new object();
 
-    // Приватний конструктор — головна фішка! Ніхто не зможе написати "new DatabaseConnection()"
     private DatabaseConnection() 
     {
         Console.WriteLine("[System: Встановлено з'єднання з базою даних.");
