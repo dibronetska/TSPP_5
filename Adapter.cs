@@ -25,3 +25,4 @@ public class FacebookAdapter : ISocialMedia
         _facebook.PostToWall(message);
     }
 }
+//Коментар для зміни
