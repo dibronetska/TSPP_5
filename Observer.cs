@@ -1,13 +1,11 @@
 using System;
 using System.Collections.Generic;
 
-// Інтерфейс підписника
 public interface IObserver
 {
     void Update(double price);
 }
 
-// Клас користувача (Спостерігач)
 public class Investor : IObserver
 {
     private string _name;
@@ -19,7 +17,6 @@ public class Investor : IObserver
     }
 }
 
-// Клас біржі (Суб'єкт)
 public class StockExchange
 {
     private List<IObserver> _investors = new List<IObserver>();
