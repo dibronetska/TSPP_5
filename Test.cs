@@ -20,6 +20,6 @@ class Program
         Investor diana = new Investor("Діана");
         
         binance.Subscribe(diana);
-        binance.ChangePrice(68000.50); // Діана отримає сповіщення
+        binance.ChangePrice(68000.50);
     }
 }
